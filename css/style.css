@@ -3,52 +3,64 @@
 }
 
 body{
-  margin: 0;
-  padding: 0;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-.row{
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
 h1 {
-  margin-bottom: 15px;
+  margin: 100px;
   text-align: center;
-  font-size: 50px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 275%;
 }
 
-.box{
+section {
+  position: relative;
+  padding: 15px;
   width: 100%;
-  overflow:none;
+}
+
+p {
+  position: relative;
+  clear: right;
+}
+
+.row{
+  width: 90%;
+}
+
+div {
+  position: relative;
+  border: 4px solid black;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  background-color: rgba(0,0,0,0.3);
 }
 
 .content-name{
-  overflow: none;
-  text-align: center;
-  border: 4px solid black;
-  width: 100px;
-  height: 40px;
-  padding: 4px;
   float: right;
-  margin-right: 35px;
-  margin-top: 0px;
+  width: 100px;
+  padding: 4px;
+  margin: 0px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 120%;
   font-weight: bold;
-  position: relative;
-  right: 3px;
+
 }
 
 .content{
-  border: 5px solid black;
-  width: 90%;
-  height: auto;
-  margin: 2.5%;
-  color: black
-  font-size: 25px;
-  padding: 4%;
-  padding-top: 40px;
-  background-color: rgba(0,0,0,0.3);
+  padding: 5px;
+  border: none;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: black;
+  margin: 0px;
+  height: 200px;
+  overflow: auto;
+  
+  
 }
 .name1{
   background-color: #FFB6C1;
@@ -63,14 +75,14 @@ h1 {
   
 }
 
-/********** Large devices only **********/
+/*desktop version*/
 @media (min-width: 992px) {
   .col-lg-4 {
     float: left;
     width: 33.33%;
   }
 }
-/********** Medium devices only **********/
+/*tablet version*/
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-6,.col-md-12 {
     float: left;
@@ -78,21 +90,17 @@ h1 {
   .col-md-6 {
     width: 50%;
   }
-  .col-md-12 {
-    margin-left: -11px;
-    width: 106%;
+ .box3{
+  float: left;
+  margin-left: 0%;
+  width: 207%;
+ }
   }
-  .name3{
-    margin-right: 74px;
-  }
-}
 
-@media (min-width: 0px) and (max-width: 767px) {
+/*mobile version*/
+@media (max-width: 767px) {
   .col-sm-12 {
     float: left;
     width: 100%;
-  }
-  .content-name{
-    margin-right: 30px;
   }
 }
